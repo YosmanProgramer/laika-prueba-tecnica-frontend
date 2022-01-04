@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    {{ partial "topbar" . }}
     {{ partial "navbar" . }}
     <main>
         {{ block "main" . }}{{ end }}
