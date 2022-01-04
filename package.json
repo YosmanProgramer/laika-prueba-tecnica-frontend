@@ -1,0 +1,32 @@
+{
+  "name": "laika-prueba-tecnica-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YosmanProgramer/laika-prueba-tecnica-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YosmanProgramer/laika-prueba-tecnica-frontend/issues"
+  },
+  "homepage": "https://github.com/YosmanProgramer/laika-prueba-tecnica-frontend#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.2",
+    "eslint": "^8.6.0",
+    "eslint-config-google": "^0.14.0",
+    "js-yaml": "^4.1.0",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.1"
+  }
+}
