@@ -63,4 +63,42 @@ const swiper2 = new Swiper('.swiper2', {
     }
 })
 
+const swiper3 = new Swiper('.swiper3', {
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 40,
+    grabCursor: true,
+
+    speed: 600,
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        // when window width is >= 768px
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        // when window width is >= 1024px
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        // when window width is >= 1536px
+        1536: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        }
+    }
+})
+
 

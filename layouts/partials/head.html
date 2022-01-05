@@ -2,4 +2,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {{ $styles := resources.Get "styles/tailwind.pcss" | toCSS | postCSS | minify }}
+{{ $fontawesome := resources.Get "styles/all.min.css" | toCSS | postCSS | minify }}
+<link rel="stylesheet" href="{{ $fontawesome.Permalink }}">
 <link rel="stylesheet" href="{{ $styles.Permalink }}">
