@@ -28,4 +28,39 @@ const swiper = new Swiper('.swiper', {
     }
 })
 
+const swiper2 = new Swiper('.swiper2', {
+    // Default parameters
+    slidesPerView: 3,
+    spaceBetween: 60,
+
+    speed: 600,
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 4,
+        },
+        // when window width is >= 768px
+        768: {
+            slidesPerView: 5,
+            spaceBetween: 70,
+        },
+        // when window width is >= 1024px
+        1024: {
+            slidesPerView: 5,
+        },
+        // when window width is >= 1536px
+        1536: {
+            slidesPerView: 6,
+            spaceBetween: 80
+        }
+    }
+})
+
 
