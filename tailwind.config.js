@@ -3,7 +3,7 @@ module.exports = {
     enabled: process.env.HUGO_ENVIRONMENT === 'production',
     content: ['./layouts/**/*.html'],
     options: {
-      safelist: [],
+      safelist: ['left-0'],
     },
   },
   darkMode: false, // or 'media' or 'class'
