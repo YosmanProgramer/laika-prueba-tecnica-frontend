@@ -1,40 +1,42 @@
 {{ define "main" }}
-<!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <a href="#">
-                <img src="/images/banner-1.jpg" alt="banner 1">
-            </a>
+<div class="mx-auto max-w-screen-2xl">
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="/images/banner-1.jpg" alt="banner 1">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="/images/banner-2.jpg" alt="banner 2">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="/images/banner-3.jpg" alt="banner 3">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="/images/banner-4.png" alt="banner 4">
+                </a>
+            </div>
         </div>
-        <div class="swiper-slide">
-            <a href="#">
-                <img src="/images/banner-2.jpg" alt="banner 2">
-            </a>
-        </div>
-        <div class="swiper-slide">
-            <a href="#">
-                <img src="/images/banner-3.jpg" alt="banner 3">
-            </a>
-        </div>
-        <div class="swiper-slide">
-            <a href="#">
-                <img src="/images/banner-4.png" alt="banner 4">
-            </a>
-        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
     </div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
 </div>
 <section>
-    <div class="mx-auto w-11/12 lg:w-10/12 max-w-screen-2xl border-b-2 border-grey py-6">
+    <div class="mx-auto w-11/12 xl:w-10/12 max-w-screen-2xl border-b-2 border-grey py-6">
         <h2 class="font-bold text-lg xl:text-xl">Categorías</h2>
         <div class="swiper2 overflow-x-hidden px-8 2xl:px-8 mt-10">
             <!-- Additional required wrapper -->
@@ -87,7 +89,7 @@
     </div>
 </section>
 <section>
-    <div class="mx-auto w-11/12 lg:w-10/12 max-w-screen-2xl border-b-2 border-grey py-6">
+    <div class="mx-auto w-11/12 xl:w-10/12 max-w-screen-2xl border-b-2 border-grey py-6">
         <h2 class="font-bold text-lg xl:text-xl">Encuentra todo para tus peludos en un solo lugar</h2>
         <div class="mx-auto w-11/12 xl:w-10/12">
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-8 lg:gap-x-8 xl:gap-x-12 mt-8 lg:mt-10">
@@ -114,7 +116,7 @@
     </div>
 </section>
 <section>
-    <div class="mx-auto w-11/12 lg:w-10/12 max-w-screen-2xl border-b-2 border-grey py-6">
+    <div class="mx-auto w-11/12 xl:w-10/12 max-w-screen-2xl border-b-2 border-grey py-6">
         <h2 class="font-bold text-lg xl:text-xl">¡Más de 100 marcas disponibles!</h2>
         <div class="mx-auto w-11/12 xl:w-10/12">
             <div class="grid grid-cols-2 md:grid-cols-12 lg:grid-cols-4 mt-10">
@@ -147,7 +149,7 @@
     </div>
 </section>
 <section>
-    <div class="mx-auto w-11/12 lg:w-10/12 max-w-screen-2xl border-b-2 border-grey py-6">
+    <div class="mx-auto w-11/12 xl:w-10/12 max-w-screen-2xl border-b-2 border-grey py-6">
         <h2 class="font-bold text-lg xl:text-xl">Favoritos Laika</h2>
         <!-- Slider main container -->
         <div class="swiper3 overflow-x-hidden mt-10 xl:mt-12">
@@ -420,24 +422,25 @@
     </div>
 </section>
 <section class="pt-12 lg:pt-16">
-    <div class="mx-auto w-11/12 lg:w-10/12 max-w-screen-2xl relative text-white rounded-xl h-80 overflow-y-hidden pt-12"
+    <div class="mx-auto w-11/12 xl:w-10/12 max-w-screen-2xl relative text-white rounded-xl md:h-80 overflow-y-hidden pt-12"
         style="background: linear-gradient(
         45deg,#533675 0,#7b4fad 15%,#9b64d9 30%,#b273f9 50%,#9b64d9 70%,#7b4fad 85%,#533675 100%);">
         <div class="grid grid-cols-12">
             <div class="col-start-2 lg:col-start-3 col-end-8">
-                <h2 class="text-2xl lg:text-3xl xl:text-4xl">Para una mejor <span class="font-bold">experiencia</span> <br> para ti
-                    y tu <span class="font-bold">peludo descarga la <br> app.</span></h2>
-                    <div class="flex flex-wrap space-x-2 space-y-2 lg:space-x-1 lg:space-y-0 items-center justify-center lg:justify-start mt-6 xl:mt-8">
-                        <a href="#">
-                            <img class="h-8 lg:h-12" src="/images/APP.png" alt="app">
-                        </a>
-                        <a href="#">
-                            <img class="h-8 lg:h-12" src="/images/GOOGLEP.png" alt="GOOGLEP">
-                        </a>
-                        <a href="#">
-                            <img class="h-8 lg:h-12" src="/images/huaweiGallery.png" alt="huaweiGallery">
-                        </a>
-                    </div>
+                <h2 class="text-2xl lg:text-3xl xl:text-4xl text-center lg:text-left">Para una mejor <span
+                        class="font-bold">experiencia</span> para ti
+                    y tu <span class="font-bold">peludo descarga la app.</span></h2>
+                <div class="grid grid-cols-2 gap-y-2 gap-x-2 lg:gap-x-6 lg:grid-cols-3 mt-6 xl:mt-8">
+                    <a href="#">
+                        <img class="w-full lg:h-12" src="/images/APP.png" alt="app">
+                    </a>
+                    <a href="#">
+                        <img class="w-full lg:h-12" src="/images/GOOGLEP.png" alt="GOOGLEP">
+                    </a>
+                    <a href="#">
+                        <img class="w-full lg:h-12" src="/images/huaweiGallery.png" alt="huaweiGallery">
+                    </a>
+                </div>
             </div>
             <div class="col-start-8 col-end-13">
                 <img class="mx-auto" src="/images/imagen_phone_r.png" alt="">
@@ -453,5 +456,5 @@
 {{ end }}
 {{ define "js" }}
 {{ $swiper := resources.Get "js/utils/swiper.js" | js.Build (dict "minify" true) }}
-<script src="{{ $swiper.Permalink }}"></script>r
+<script src="{{ $swiper.Permalink }}"></script>
 {{ end }}
