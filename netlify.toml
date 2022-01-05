@@ -1,5 +1,8 @@
 [build]
 command = "hugo"
+context = "production"
 publish = "public"
-[build.environment]
-HUGO_VERSION = "0.87.0"
+
+[context.production.environment]
+HUGO_ENV = "production"
+HUGO_VERSION = "0.78.0"
