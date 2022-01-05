@@ -8,8 +8,10 @@
 </head>
 
 <body>
-    {{ partial "topbar" . }}
-    {{ partial "navbar" . }}
+    <div class="sticky top-0 left-0 z-10">
+        {{ partial "topbar" . }}
+        {{ partial "navbar" . }}
+    </div>
     <main>
         {{ block "main" . }}{{ end }}
     </main>
