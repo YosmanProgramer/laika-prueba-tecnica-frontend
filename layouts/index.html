@@ -1,3 +1,37 @@
 {{ define "main" }}
-    MAIN
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="/images/banner-1.jpg" alt="banner 1">
+        </div>
+        <div class="swiper-slide">
+            <img src="/images/banner-2.jpg" alt="banner 2">
+        </div>
+        <div class="swiper-slide">
+            <img src="/images/banner-3.jpg" alt="banner 3">
+        </div>
+        <div class="swiper-slide">
+            <img src="/images/banner-4.png" alt="banner 4">
+        </div>
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+{{ end }}
+{{ define "head" }}
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+{{ $swiper := resources.Get "styles/swiper.css" | toCSS | postCSS | minify }}
+<link rel="stylesheet" href="{{ $swiper.Permalink }}">
+{{ end }}
+{{ define "js" }}
+{{ $swiper := resources.Get "js/utils/swiper.js" | js.Build (dict "minify" true) }}
+<script src="{{ $swiper.Permalink }}"></script>r
 {{ end }}
